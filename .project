@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>PS2key</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>jp.co.overtone.nslplugin_core.NSLToVerilogProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>jp.co.overtone.nslplugin_core.NSLToVHDLProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>jp.co.overtone.nslplugin_core.NSLToSystemCProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>jp.co.overtone.nslplugin_core.NSLPlojectNature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,16 @@
+#include "IOrach.nsh"
+#include "keyboarddata.nsh"
+
+declare top{
+	input KBClock,KBData;
+}
+module top{
+	IOrach kbrach;
+	keyboarddata kbdata;
+	{
+		kbrach.m_clock = KBClock;
+		kbrach.datain = KBData;
+		kbdata.datain = kbrach.dataout;
+		kbdata.sync = KBData;
+	}
+}

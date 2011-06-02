@@ -1,0 +1,10 @@
+#include <IOrach.nsh>
+module IOrach{
+	reg buff[2];
+	
+	{
+		buff := {buff[0],datain};
+		dataout = buff[1];
+	}
+	
+}

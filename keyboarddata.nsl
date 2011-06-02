@@ -1,0 +1,21 @@
+#include "keyboarddata.nsh"
+
+module keyboarddata{
+	reg old_sync;
+	func_self syncdata;
+	reg KBdata[11],dataCount[4]=0;
+	
+	{
+		if((old_sync ==0)&&(sync==1)){
+			syncdata();
+		}
+		old_sync := sync;
+		if(dataCount ==12){
+			outputByteE = 1;
+		}
+	}
+	func syncdata{
+		dataCount := dataCount + 1;
+		KBdata := {KBdata[9:0],datain};
+	}
+}
